@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addTwoNumbers() {
+                         const firstNumber = parseFloat(prompt('Enter the first number:'));
+                         const secondNumber = parseFloat(prompt('Enter the second number:'));
+
+                         if (isNaN(firstNumber) || isNaN(secondNumber)) {
+                           return 'Invalid input. Please enter valid numbers.';
+                         }
+
+                         const sum = firstNumber + secondNumber;
+                         return sum;
+                       }
+
+
+                       const result = addTwoNumbers();
+                       alert('The sum of the two numbers is: ' + result);
+
+    </script>
+</body>
+</html>

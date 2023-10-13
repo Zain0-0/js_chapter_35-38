@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calculateHypotenuse() {
+            var base = parseFloat(prompt("Enter the length of the base:"));
+            var perpendicular = parseFloat(prompt("Enter the length of the perpendicular:"));
+
+            function calculateSquare(x) {
+                return x * x;
+            }
+
+            var baseSquared = calculateSquare(base);
+            var perpendicularSquared = calculateSquare(perpendicular);
+
+            var hypotenuseSquared = baseSquared + perpendicularSquared;
+
+            function calculateSquareRoot(number) {
+                return Math.sqrt(number);
+            }
+
+            var hypotenuse = calculateSquareRoot(hypotenuseSquared);
+
+            document.write(`The hypotenuse of the right triangle is ${hypotenuse}`);
+        }
+
+        calculateHypotenuse();
+
+    </script>
+</body>
+
+</html>

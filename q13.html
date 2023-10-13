@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function countLetterOccurrences(str, letter) {
+            var count = 0;
+
+            for (var i = 0; i < str.length; i++) {
+                if (str[i] === letter) {
+                    count++;
+                }
+            }
+
+            return count;
+        }
+
+        var inputString = 'JSResourceS.com';
+        var targetLetter = 'o';
+
+        var occurrenceCount = countLetterOccurrences(inputString, targetLetter);
+        document.write("Input string is :"+inputString+"<br>");
+        document.write("Letter to be counted is 'o'. <br>");
+
+        document.write(`The letter "${targetLetter}" appears ${occurrenceCount} times in the string.`);
+
+    </script>
+</body>
+
+</html>

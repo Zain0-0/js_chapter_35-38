@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calcCircumference(radius) {
+            var circumference = 2 * Math.PI * radius;
+            document.write(`The circumference is ${circumference.toFixed(2)}`);
+        }
+
+        function calcArea(radius) {
+            var area = Math.PI * Math.pow(radius, 2);
+            document.write(`The area is ${area.toFixed(2)}`);
+        }
+
+        var radius = parseFloat(prompt("please enter redius."));
+        document.write("Radius is :"+radius+"<br>");
+        calcCircumference(radius);
+        document.write('<br>');
+        calcArea(radius);
+
+    </script>
+</body>
+
+</html>
